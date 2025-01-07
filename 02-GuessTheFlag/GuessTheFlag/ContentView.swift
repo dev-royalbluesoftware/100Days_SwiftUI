@@ -66,7 +66,7 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 
-                Text("Score: ???")
+                Text("Score: ???")  // TODO: display current score
                     .foregroundStyle(.white)
                     .font(.title.bold())
                 
@@ -78,6 +78,7 @@ struct ContentView: View {
             Button("Play again", action: askQuestion)
         } message: {
             Text("Your score is ????")
+            // TODO: logic for tracking correct score - display score
         }
     }
     
