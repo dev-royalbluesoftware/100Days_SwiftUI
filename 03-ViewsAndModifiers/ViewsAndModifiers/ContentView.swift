@@ -10,15 +10,31 @@
 
 import SwiftUI
 
+// MARK: - CapsuleText Properties
+
+struct CapsuleText: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.largeTitle)
+            .padding()
+//            .foregroundStyle(.white)
+            .background(.blue)
+            .clipShape(.capsule)
+    }
+}
+
+
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 10) {
+            CapsuleText(text: "Hello, World!")
+                .foregroundStyle(.white)
+            
+            CapsuleText(text: "SwiftUI")
+                .foregroundStyle(.yellow)
         }
-        .padding()
     }
 }
 
