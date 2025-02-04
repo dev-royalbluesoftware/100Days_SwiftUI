@@ -1,3 +1,3 @@
-100 Days SwiftUI
+#100 Days SwiftUI
 
-Project 1 - We Split
+- Project 1: We Split
